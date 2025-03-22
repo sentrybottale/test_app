@@ -35,7 +35,7 @@ function fn() {
     var android = {};
     android["desiredConfig"] = {
       alwaysMatch: {
-        "appium:app": "/Users/lyubomirlyubenov/Downloads/app-release.apk",
+        "appium:app": "app-release.apk",
         "appium:newCommandTimeout": 300,
         "appium:platformVersion": "14.0",
         "appium:platformName": "Android",
