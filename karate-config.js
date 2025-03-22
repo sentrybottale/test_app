@@ -32,10 +32,25 @@ function fn() {
 
  
 
-    var android = {};
-    android["desiredConfig"] = {
-      alwaysMatch: {
-        "appium:app": "app-release.apk",
+
+  // Resolve the classpath:app-release.apk to an absolute path
+  var ClassLoader = Java.type('java.lang.ClassLoader');
+  var classLoader = ClassLoader.getSystemClassLoader();
+  var apkResource = classLoader.getResource('app-release.apk');
+  if (!apkResource) {
+    throw new Error('app-release.apk not found in classpath! Ensure it is in src/test/resources.');
+  }
+  var apkPath = apkResource.getPath();
+  // On Windows, the path might start with "file:/", which needs to be cleaned up
+  if (apkPath.startsWith('file:')) {
+    apkPath = apkPath.substring(5); // Remove "file:" prefix
+  }
+  karate.log('Resolved APK path:', apkPath);
+
+  var android = {};
+  android["desiredConfig"] = {
+    alwaysMatch: {
+      "appium:app": apkPath, // Use the resolved absolute path
         "appium:newCommandTimeout": 300,
         "appium:platformVersion": "14.0",
         "appium:platformName": "Android",
