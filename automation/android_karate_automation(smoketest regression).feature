@@ -12,6 +12,7 @@ Scenario: S0 Verify initial balance
   * delay(10000)
   # Verify initial balance
   * match driver.text('//android.widget.TextView[@resource-id="com.serheniuk.currencyconversion:id/balance"]') == '1000 EUR'
+  * delay(1000)
 
 
 Scenario: S1 Convert a valid amount from EUR to USD
@@ -49,6 +50,7 @@ Scenario: S2 Convert a larger valid amount from EUR to USD
   # Enter amount to sell (500 EUR)
   * driver.input('//android.widget.EditText[@resource-id="com.serheniuk.currencyconversion:id/amountInput"]', '500')
   * match driver.text('//android.widget.EditText[@resource-id="com.serheniuk.currencyconversion:id/amountInput"]') == '500'
+  * delay(1000)
 
   # Verify currency dropdowns (EUR to USD)
   * match driver.text('//android.widget.TextView[@resource-id="com.serheniuk.currencyconversion:id/fromCurrency"]') == 'EUR'
@@ -98,7 +100,7 @@ Scenario: S4 Attempt to convert more EUR than available balance
   Given driver { webDriverSession: { capabilities: { alwaysMatch: "#(android.desiredConfig.alwaysMatch)", firstMatch: "#(android.desiredConfig.firstMatch)" } } }
   # Verify initial balance
   * match driver.text('//android.widget.TextView[@resource-id="com.serheniuk.currencyconversion:id/balance"]') == '1000 EUR'
-  * delay(30000000)
+  * delay(300)
 
   # Enter amount to sell (1500 EUR)
   * driver.input('//android.widget.EditText[@resource-id="com.serheniuk.currencyconversion:id/amountInput"]', '1500')
