@@ -98,6 +98,7 @@ Scenario: S4 Attempt to convert more EUR than available balance
   Given driver { webDriverSession: { capabilities: { alwaysMatch: "#(android.desiredConfig.alwaysMatch)", firstMatch: "#(android.desiredConfig.firstMatch)" } } }
   # Verify initial balance
   * match driver.text('//android.widget.TextView[@resource-id="com.serheniuk.currencyconversion:id/balance"]') == '1000 EUR'
+  * delay(30000000)
 
   # Enter amount to sell (1500 EUR)
   * driver.input('//android.widget.EditText[@resource-id="com.serheniuk.currencyconversion:id/amountInput"]', '1500')
