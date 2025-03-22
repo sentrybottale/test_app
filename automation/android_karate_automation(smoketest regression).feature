@@ -3,7 +3,7 @@ Feature: Currency Converter Smoke Test Automation
 Background: App Preset
   * configure driver = { type: 'android', webDriverPath: "/", start: true, httpConfig: { readTimeout: 120000 } }
 
-Scenario: S0 Berify initial balance
+Scenario: S0 Verify initial balance
 
   #Debug info
   * print 'Desired Config:', android.desiredConfig
