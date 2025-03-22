@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"668002af-50a9-4b22-bc8d-1130c8f87728",karate_version:"1.5.0",karate_meta:"vscode:2.0.6"});
+  }
+});
+</script>
+
+    <title>apptest.android</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-03-22 09:07:09 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>android mobile app UI tests</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">apptest/android.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">android test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">android mobile app UI tests</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;android&#39;, webDriverPath: &quot;/&quot;, start: true, httpConfig: { readTimeout: 120000 } }</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">09:07:08.987 karate.env system property was: null 
+09:07:09.017 apptest/android.feature:4
+* configure driver = { type: &#39;android&#39;, webDriverPath: &quot;/&quot;, start: true, httpConfig: { readTimeout: 120000 } }
+&gt;&gt; apptest/android.feature:6
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: afterSlack.js
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env;  //  &lt;set this only when set for CI execution - karate parameter e=locale
+03:   //java -jar karate-1.3.0.jar website/OrdersBG.feature -e=dev
+04:   karate.log(&#39;karate.env system property was:&#39;, env);
+05:   
+06:   if (!env) {
+07:     env = &#39;dev&#39;; // a custom &#39;intelligent&#39; default
+08:   }
+09:     //Default defaults (dev environment + bg market)
+10:     var config = {baseURL: &#39;https://qa.remixshop.dev/&#39;, market: &#39;bg&#39;}; 
+11:     function getResourcePath(resource) {
+12:       var File = Java.type(&#39;java.io.File&#39;);
+13:       var Paths = Java.type(&#39;java.nio.file.Paths&#39;);
+14:       var path = Paths.get(&#39;util&#39;, resource).toAbsolutePath().toString();
+15:       return path;
+16:     }
+17:     var extensionPath = getResourcePath(&#39;chrome-extension&#39;);
+18:     
+19:     //Need for Chrome for testing
+20:     var projectDir = karate.properties[&#39;user.dir&#39;];
+21:     var chromeExecutable = projectDir + &#39;/.vscode/chrome/mac_arm/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing&#39;;
+22: 
+23:     //Website
+24:     if (env == &#39;dev&#39;) {
+25:       config.baseURL = &#39;https://qa.remixshop.dev/&#39;
+26:       config.y1ApiURL = &#39;https://qa.remixshop.dev/api/&#39;
+27:       config.y2ApiURL = &#39;https://api.qa.remixshop.dev/&#39;
+28:       config.newAdminURL = &#39;https://orders.qa.remixshop.dev/&#39;
+29:       config.idURL = &#39;https://my.qa.remixshop.dev/&#39;
+30:       config.mfpURL = &#39;https://sell.qa.remixshop.dev/&#39;
+31:       config.consApiURL = &#39;https://cons.qa.remixshop.dev:443&#39;
+32:       config.consURL = &#39;https://cleanout.qa.remixshop.dev/&#39;
+33:       config.whURL = &#39;https://warehouse.qa.remixshop.dev/&#39;
+34:       config.kqURL = &#39;https://192.168.90.8:3059/&#39;
+35:       config.kqConsURL = &#39;https://192.168.90.8:3061/&#39;
+36:       config.kqErpURL = &#39;https://192.168.90.8:3065/&#39;
+37:       config.LadminURL = &#39;https://qa.remixshop.dev/admin/&#39;
+38:       config.y1ApiErpURL = &#39;https://erp-qa.remixshop.dev/api/&#39;
+39:       config.y2ApiErpURL = &#39;https://eapi.qa.remixshop.dev/&#39;
+40:       config.y1ApiWHURL = &#39;https://qa.remixshop.dev/warehouse/api/&#39;
+41:       config.kqConslURL = &#39;https://192.168.20.166:4667/&#39;
+42:       config.kqNewlURL = &#39;https://192.168.20.166:4666/&#39;
+43:       config.kqRedShift = &#39;https://192.168.20.166:4669/&#39;
+44:       config.kqPricinglURL = &#39;https://192.168.20.166:4671/&#39;
+45:       config.nERP = &#39;https://erp.qa.remixshop.dev/&#39;
+46:       config.oERP = &#39;https://erp-qa.remixshop.dev/&#39;
+47:       config.inputGridURL = &#39;https://input-grid-backend.qa.remixshop.dev/&#39;
+48:       config.raas = &#39;https://tommy.qa.remixwidget.com/?lang=de&#39;
+49:       config.raasEn = &#39;https://tommy.qa.remixwidget.com/?lang=en&#39;
+50:       config.raasAdmin = &#39;https://raas-admin.qa.remixshop.dev/#/&#39;
+51:      }
+52:      if (env == &#39;integration&#39;) {
+53:       config.baseURL = &#39;https://integration.remixshop.dev/&#39;
+54:       config.y1ApiURL = &#39;https://integration.remixshop.dev/api/&#39;
+55:       config.y2ApiURL = &#39;https://api.integration.remixshop.dev/&#39;
+56:       config.ordersURL = &#39;https://orders.integration.remixshop.dev/&#39;
+57:       config.idURL = &#39;https://my.integration.remixshop.dev/&#39;
+58:       config.mfpURL = &#39;https://sell.integration.remixshop.dev/&#39;
+59:       config.consApiURL = &#39;https://cons.integration.remixshop.dev:443&#39;
+60:       config.consURL = &#39;https://cleanout.integration.remixshop.dev/&#39;
+61:       config.whURL = &#39;https://warehouse.integration.remixshop.dev/&#39;
+62:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+63:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+64:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+65:       config.LadminURL = &#39;https://integration.remixshop.dev/admin/&#39;
+66:       config.y1ApiErpURL = &#39;https://erp-integration.remixshop.dev/api/&#39;
+67:       config.y2ApiErpURL = &#39;https://eapi.integration.remixshop.dev/&#39;
+68:       config.y1ApiWHURL = &#39;https://integration.remixshop.dev/warehouse/api/&#39;
+69:       config.inputGridURL = &#39;https://input-grid-backend.integration.remixshop.dev/&#39;
+70:      }
+71:      if (env == &#39;integration-feature-one&#39;) {
+72:       config.baseURL = &#39;https://integration-feature-one.remixshop.dev/&#39;
+73:       config.y1ApiURL = &#39;https://integration-feature-one.remixshop.dev/api/&#39;
+74:       config.y2ApiURL = &#39;https://api.integration-feature-one.remixshop.dev/&#39;
+75:       config.ordersURL = &#39;https://orders.integration-feature-one.remixshop.dev/&#39;
+76:       config.idURL = &#39;https://my.integration-feature-one.remixshop.dev/&#39;
+77:       config.mfpURL = &#39;https://sell.integration-feature-one.remixshop.dev/&#39;
+78:       config.consApiURL = &#39;https://cons.integration-feature-one.remixshop.dev:443&#39;
+79:       config.consURL = &#39;https://cleanout.integration-feature-one.remixshop.dev/&#39;
+80:       config.whURL = &#39;https://warehouse.integration-feature-one.remixshop.dev/&#39;
+81:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+82:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+83:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+84:       config.LadminURL = &#39;https://integration-feature-one.remixshop.dev/admin/&#39;
+85:       config.y1ApiErpURL = &#39;https://erp-integration-feature-one.remixshop.dev/api/&#39;
+86:       config.y2ApiErpURL = &#39;https://eapi.integration-feature-one.remixshop.dev/&#39;
+87:       config.y1ApiWHURL = &#39;https://integration-feature-one.remixshop.dev/warehouse/api/&#39;
+88:       config.inputGridURL = &#39;https://input-grid-backend.integration-feature-one.remixshop.dev/&#39;
+89:      }
+90:      if (env == &#39;integration-feature-two&#39;) {
+91:       config.baseURL = &#39;https://integration-feature-two.remixshop.dev/&#39;
+92:       config.y1ApiURL = &#39;https://integration-feature-two.remixshop.dev/api/&#39;
+93:       config.y2ApiURL = &#39;https://api.integration-feature-two.remixshop.dev/&#39;
+94:       config.ordersURL = &#39;https://orders.integration-feature-two.remixshop.dev/&#39;
+95:       config.idURL = &#39;https://my.integration-feature-two.remixshop.dev/&#39;
+96:       config.mfpURL = &#39;https://sell.integration-feature-two.remixshop.dev/&#39;
+97:       config.consApiURL = &#39;https://cons.integration-feature-two.remixshop.dev:443&#39;
+98:       config.consURL = &#39;https://cleanout.integration-feature-two.remixshop.dev/&#39;
+99:       config.whURL = &#39;https://warehouse.integration-feature-two.remixshop.dev/&#39;
+100:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+101:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+102:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+103:       config.LadminURL = &#39;https://integration-feature-two.remixshop.dev/admin/&#39;
+104:       config.y1ApiErpURL = &#39;https://erp-integration-feature-two.remixshop.dev/api/&#39;
+105:       config.y2ApiErpURL = &#39;https://eapi.integration-feature-two.remixshop.dev/&#39;
+106:       config.y1ApiWHURL = &#39;https://integration-feature-two.remixshop.dev/warehouse/api/&#39;
+107:       config.inputGridURL = &#39;https://input-grid-backend.integration-feature-two.remixshop.dev/&#39;
+108:      }
+109:      if (env == &#39;hotfix&#39;) {
+110:       config.baseURL = &#39;https://integration-hotfix.remixshop.dev/&#39;
+111:       config.y1ApiURL = &#39;https://integration-hotfix.remixshop.dev/api/&#39;
+112:       config.y2ApiURL = &#39;https://api.integration-hotfix.remixshop.dev/&#39;
+113:       config.ordersURL = &#39;https://orders.integration-hotfix.remixshop.dev/&#39;
+114:       config.idURL = &#39;https://my.integration-hotfix.remixshop.dev/&#39;
+115:       config.mfpURL = &#39;https://sell.integration-hotfix.remixshop.dev/&#39;
+116:       config.consApiURL = &#39;https://cons.integration-hotfix.remixshop.dev:443&#39;
+117:       config.consURL = &#39;https://cleanout.integration-hotfix.remixshop.dev/&#39;
+118:       config.whURL = &#39;https://warehouse.integration-hotfix.remixshop.dev/&#39;
+119:       config.kqURL = &#39;https://192.168.90.8:X/&#39;
+120:       config.kqConsURL = &#39;https://192.168.90.8:X/&#39;
+121:       config.kqErpURL = &#39;https://192.168.90.8:X/&#39;
+122:       config.LadminURL = &#39;https://integration-hotfix.remixshop.dev/admin/&#39;
+123:       config.y1ApiErpURL = &#39;https://erp-integration-hotfix.remixshop.dev/api/&#39;
+124:       config.y2ApiErpURL = &#39;https://eapi.integration-hotfix.remixshop.dev/&#39;
+125:       config.y1ApiWHURL = &#39;https://integration-hotfix.remixshop.dev/warehouse/api/&#39;
+126:       config.kqConslURL = &#39;https://192.168.20.166:4667/&#39;
+127:       config.kqNewlURL = &#39;https://192.168.20.166:4666/&#39;
+128:       config.kqRedShift = &#39;https://192.168.20.166:4669/&#39;
+129:       config.inputGridURL = &#39;https://input-grid-backend.integration-hotfix.remixshop.dev/&#39;
+130:      }
+131:      if (env == &#39;live&#39;) {
+132:       config.baseURL = &#39;https://remixshop.com/&#39;
+133:       config.y2ApiURL = &#39;https://api.remixshop.com/&#39;
+134:       config.y1ApiURL = &#39;https://remixshop.com/&#39;
+135:       config.ordersURL = &#39;https://admin.remixshop.dev/&#39;
+136:       config.mfpURL = &#39;https://sell.remixshop.com/&#39;
+137:       config.consURL = &#39;https://cleanout.remixshop.com/&#39;
+138:       config.raas = &#39;https://tommy.remixwidget.com/&#39;
+139:       config.raasAdmin = &#39;https://raas-admin.remixshop.dev/#/&#39;
+140:      }
+141:      //Cronicle
+142:      if (env == &#39;devcronicle&#39;) {
+143:       config.baseURL = &#39;http://cronicle.rx.remixshop.com/&#39;
+144:      }
+145:      
+146:     // don&#39;t waste time waiting for a connection or if servers don&#39;t respond within 15 seconds
+147:     karate.configure(&#39;retry&#39;, { count: 6, interval: 3000 });
+148:     karate.configure(&#39;connectTimeout&#39;, 25000);
+149:     karate.configure(&#39;readTimeout&#39;, 20000);
+150: 
+151:     //OPTION 1: by default locally Chrome:
+152:     karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, addOptions: [&quot;--remote-allow-origins=*&quot;, &#39;--disable-search-engine-choice-screen&#39;, &#39;--disable-infobars&#39;,&#39;--no-first-run&#39;,&#39;--disable-notifications&#39;, &#39;--disable-features=PasswordLeakDetection&#39;], showDriverLog: false });
+153:     //OPTION 1 PLUS headerProxy!!!
+154:     //karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, addOptions: [&quot;--remote-allow-origins=*&quot;, &quot;--load-extension=&quot; + extensionPath], showDriverLog: false, });
+155:     //OPTION 2: docker container with Chromium, on M mac (arm) runs
+156:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;justinribeiro/chrome-headless:chromium&#39;, showDriverLog: true  });
+157:     //OPTION 3: docker container for Linux/Windows
+158:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;justinribeiro/chrome-headless:stable&#39;, showDriverLog: false });
+159:     //OPTION 4: Karate supported full featured container, with script video recording
+160:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;karatelabs/karate-chrome&#39;, showDriverLog: true })
+161:     //OPTION 5: mozilla
+162:     //karate.configure(&#39;driver&#39;, { type: &#39;geckodriver&#39;, executable: &#39;geckodriver.exe&#39; });
+163:     //OPTION 6: Chrome for testing:
+164:     //karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, executable: chromeExecutable, addOptions: [ &quot;--remote-allow-origins=*&quot;, &quot;--disable-popup-blocking&quot;, &quot;--disable-infobars&quot;, &quot;--no-first-run&quot;, &quot;--no-default-browser-check&quot;, &quot;--start-maximized&quot;, &quot;--disable-features=DefaultBrowserSettingEnabled&quot;, &quot;--disable-component-update&quot;, &quot;--disable-background-networking&quot;, &quot;--safebrowsing-disable-auto-update&quot;, &quot;--disable-sync&quot;, &quot;--disable-background-extensions&quot;, &quot;--disable-background-timer-throttling&quot;, &quot;--disable-client-side-phishing-detection&quot;, &quot;--disable-web-security&quot;, &quot;--test-type&quot;, &quot;--disable-gpu&quot;, &quot;--allow-running-insecure-content&quot;, &quot;--ignore-certificate-errors&quot;, &quot;--disable-translate&quot;, &quot;--disable-dev-shm-usage&quot;, &quot;--disable-default-apps&quot;, &quot;--disable-notifications&quot;, &quot;--disable-logging&quot;, &quot;--no-default-browser-check&quot;, &quot;--disable-blink-features=AutomationControlled&quot;, &quot;--remote-debugging-port=9222&quot; ], webDriverSession: { capabilities: { &#39;goog:chromeOptions&#39;: { prefs: { &#39;search_provider&#39;: { &#39;name&#39;: &#39;Google&#39;, &#39;keyword&#39;: &#39;google.com&#39;, &#39;search_url&#39;: &#39;https://www.google.com/search?q={searchTerms}&#39;, &#39;favicon_url&#39;: &#39;https://www.google.com/favicon.ico&#39; }, &#39;intl.accept_languages&#39;: &#39;en-US&#39;, &#39;profile&#39;: { &#39;password_manager_enabled&#39;: false }, &#39;credentials_enable_service&#39;: false }, &#39;useAutomationExtension&#39;: false, &#39;excludeSwitches&#39;: [&#39;enable-automation&#39;] } } }, showDriverLog: true });
+165:     //Configure the global afterScenario (where ping to Slack is performed on test failure)
+166:     karate.configure(&#39;afterScenario&#39;, read(&#39;classpath:afterSlack.js&#39;));
+167: 
+168:     var android = {};
+169:     android[&quot;desiredConfig&quot;] = {
+170:       alwaysMatch: {
+171:         &quot;appium:app&quot;: &quot;/Users/lyubomirlyubenov/Downloads/app-release.apk&quot;,
+172:         &quot;appium:newCommandTimeout&quot;: 300,
+173:         &quot;appium:platformVersion&quot;: &quot;14.0&quot;,
+174:         &quot;appium:platformName&quot;: &quot;Android&quot;,
+175:         &quot;appium:connectHardwareKeyboard&quot;: true,
+176:         &quot;appium:deviceName&quot;: &quot;emulator-5554&quot;,
+177:         &quot;appium:avd&quot;: &quot;Pixel_6a_API_34&quot;,
+178:         &quot;appium:automationName&quot;: &quot;UiAutomator2&quot;
+179:       },
+180:       firstMatch: [{}]
+181:     };
+182:     config[&quot;android&quot;] = android;
+183:     return config;
+184:   }    
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: afterSlack.js
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- &lt;js&gt;.fn(Unnamed:166)
+
+apptest/android.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>print &#39;Desired Config:&#39;, android.desiredConfig</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">09:07:09.017 apptest/android.feature:7
+* print &#39;Desired Config:&#39;, android.desiredConfig
+&gt;&gt; apptest/android.feature:6
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: afterSlack.js
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env;  //  &lt;set this only when set for CI execution - karate parameter e=locale
+03:   //java -jar karate-1.3.0.jar website/OrdersBG.feature -e=dev
+04:   karate.log(&#39;karate.env system property was:&#39;, env);
+05:   
+06:   if (!env) {
+07:     env = &#39;dev&#39;; // a custom &#39;intelligent&#39; default
+08:   }
+09:     //Default defaults (dev environment + bg market)
+10:     var config = {baseURL: &#39;https://qa.remixshop.dev/&#39;, market: &#39;bg&#39;}; 
+11:     function getResourcePath(resource) {
+12:       var File = Java.type(&#39;java.io.File&#39;);
+13:       var Paths = Java.type(&#39;java.nio.file.Paths&#39;);
+14:       var path = Paths.get(&#39;util&#39;, resource).toAbsolutePath().toString();
+15:       return path;
+16:     }
+17:     var extensionPath = getResourcePath(&#39;chrome-extension&#39;);
+18:     
+19:     //Need for Chrome for testing
+20:     var projectDir = karate.properties[&#39;user.dir&#39;];
+21:     var chromeExecutable = projectDir + &#39;/.vscode/chrome/mac_arm/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing&#39;;
+22: 
+23:     //Website
+24:     if (env == &#39;dev&#39;) {
+25:       config.baseURL = &#39;https://qa.remixshop.dev/&#39;
+26:       config.y1ApiURL = &#39;https://qa.remixshop.dev/api/&#39;
+27:       config.y2ApiURL = &#39;https://api.qa.remixshop.dev/&#39;
+28:       config.newAdminURL = &#39;https://orders.qa.remixshop.dev/&#39;
+29:       config.idURL = &#39;https://my.qa.remixshop.dev/&#39;
+30:       config.mfpURL = &#39;https://sell.qa.remixshop.dev/&#39;
+31:       config.consApiURL = &#39;https://cons.qa.remixshop.dev:443&#39;
+32:       config.consURL = &#39;https://cleanout.qa.remixshop.dev/&#39;
+33:       config.whURL = &#39;https://warehouse.qa.remixshop.dev/&#39;
+34:       config.kqURL = &#39;https://192.168.90.8:3059/&#39;
+35:       config.kqConsURL = &#39;https://192.168.90.8:3061/&#39;
+36:       config.kqErpURL = &#39;https://192.168.90.8:3065/&#39;
+37:       config.LadminURL = &#39;https://qa.remixshop.dev/admin/&#39;
+38:       config.y1ApiErpURL = &#39;https://erp-qa.remixshop.dev/api/&#39;
+39:       config.y2ApiErpURL = &#39;https://eapi.qa.remixshop.dev/&#39;
+40:       config.y1ApiWHURL = &#39;https://qa.remixshop.dev/warehouse/api/&#39;
+41:       config.kqConslURL = &#39;https://192.168.20.166:4667/&#39;
+42:       config.kqNewlURL = &#39;https://192.168.20.166:4666/&#39;
+43:       config.kqRedShift = &#39;https://192.168.20.166:4669/&#39;
+44:       config.kqPricinglURL = &#39;https://192.168.20.166:4671/&#39;
+45:       config.nERP = &#39;https://erp.qa.remixshop.dev/&#39;
+46:       config.oERP = &#39;https://erp-qa.remixshop.dev/&#39;
+47:       config.inputGridURL = &#39;https://input-grid-backend.qa.remixshop.dev/&#39;
+48:       config.raas = &#39;https://tommy.qa.remixwidget.com/?lang=de&#39;
+49:       config.raasEn = &#39;https://tommy.qa.remixwidget.com/?lang=en&#39;
+50:       config.raasAdmin = &#39;https://raas-admin.qa.remixshop.dev/#/&#39;
+51:      }
+52:      if (env == &#39;integration&#39;) {
+53:       config.baseURL = &#39;https://integration.remixshop.dev/&#39;
+54:       config.y1ApiURL = &#39;https://integration.remixshop.dev/api/&#39;
+55:       config.y2ApiURL = &#39;https://api.integration.remixshop.dev/&#39;
+56:       config.ordersURL = &#39;https://orders.integration.remixshop.dev/&#39;
+57:       config.idURL = &#39;https://my.integration.remixshop.dev/&#39;
+58:       config.mfpURL = &#39;https://sell.integration.remixshop.dev/&#39;
+59:       config.consApiURL = &#39;https://cons.integration.remixshop.dev:443&#39;
+60:       config.consURL = &#39;https://cleanout.integration.remixshop.dev/&#39;
+61:       config.whURL = &#39;https://warehouse.integration.remixshop.dev/&#39;
+62:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+63:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+64:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+65:       config.LadminURL = &#39;https://integration.remixshop.dev/admin/&#39;
+66:       config.y1ApiErpURL = &#39;https://erp-integration.remixshop.dev/api/&#39;
+67:       config.y2ApiErpURL = &#39;https://eapi.integration.remixshop.dev/&#39;
+68:       config.y1ApiWHURL = &#39;https://integration.remixshop.dev/warehouse/api/&#39;
+69:       config.inputGridURL = &#39;https://input-grid-backend.integration.remixshop.dev/&#39;
+70:      }
+71:      if (env == &#39;integration-feature-one&#39;) {
+72:       config.baseURL = &#39;https://integration-feature-one.remixshop.dev/&#39;
+73:       config.y1ApiURL = &#39;https://integration-feature-one.remixshop.dev/api/&#39;
+74:       config.y2ApiURL = &#39;https://api.integration-feature-one.remixshop.dev/&#39;
+75:       config.ordersURL = &#39;https://orders.integration-feature-one.remixshop.dev/&#39;
+76:       config.idURL = &#39;https://my.integration-feature-one.remixshop.dev/&#39;
+77:       config.mfpURL = &#39;https://sell.integration-feature-one.remixshop.dev/&#39;
+78:       config.consApiURL = &#39;https://cons.integration-feature-one.remixshop.dev:443&#39;
+79:       config.consURL = &#39;https://cleanout.integration-feature-one.remixshop.dev/&#39;
+80:       config.whURL = &#39;https://warehouse.integration-feature-one.remixshop.dev/&#39;
+81:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+82:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+83:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+84:       config.LadminURL = &#39;https://integration-feature-one.remixshop.dev/admin/&#39;
+85:       config.y1ApiErpURL = &#39;https://erp-integration-feature-one.remixshop.dev/api/&#39;
+86:       config.y2ApiErpURL = &#39;https://eapi.integration-feature-one.remixshop.dev/&#39;
+87:       config.y1ApiWHURL = &#39;https://integration-feature-one.remixshop.dev/warehouse/api/&#39;
+88:       config.inputGridURL = &#39;https://input-grid-backend.integration-feature-one.remixshop.dev/&#39;
+89:      }
+90:      if (env == &#39;integration-feature-two&#39;) {
+91:       config.baseURL = &#39;https://integration-feature-two.remixshop.dev/&#39;
+92:       config.y1ApiURL = &#39;https://integration-feature-two.remixshop.dev/api/&#39;
+93:       config.y2ApiURL = &#39;https://api.integration-feature-two.remixshop.dev/&#39;
+94:       config.ordersURL = &#39;https://orders.integration-feature-two.remixshop.dev/&#39;
+95:       config.idURL = &#39;https://my.integration-feature-two.remixshop.dev/&#39;
+96:       config.mfpURL = &#39;https://sell.integration-feature-two.remixshop.dev/&#39;
+97:       config.consApiURL = &#39;https://cons.integration-feature-two.remixshop.dev:443&#39;
+98:       config.consURL = &#39;https://cleanout.integration-feature-two.remixshop.dev/&#39;
+99:       config.whURL = &#39;https://warehouse.integration-feature-two.remixshop.dev/&#39;
+100:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+101:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+102:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+103:       config.LadminURL = &#39;https://integration-feature-two.remixshop.dev/admin/&#39;
+104:       config.y1ApiErpURL = &#39;https://erp-integration-feature-two.remixshop.dev/api/&#39;
+105:       config.y2ApiErpURL = &#39;https://eapi.integration-feature-two.remixshop.dev/&#39;
+106:       config.y1ApiWHURL = &#39;https://integration-feature-two.remixshop.dev/warehouse/api/&#39;
+107:       config.inputGridURL = &#39;https://input-grid-backend.integration-feature-two.remixshop.dev/&#39;
+108:      }
+109:      if (env == &#39;hotfix&#39;) {
+110:       config.baseURL = &#39;https://integration-hotfix.remixshop.dev/&#39;
+111:       config.y1ApiURL = &#39;https://integration-hotfix.remixshop.dev/api/&#39;
+112:       config.y2ApiURL = &#39;https://api.integration-hotfix.remixshop.dev/&#39;
+113:       config.ordersURL = &#39;https://orders.integration-hotfix.remixshop.dev/&#39;
+114:       config.idURL = &#39;https://my.integration-hotfix.remixshop.dev/&#39;
+115:       config.mfpURL = &#39;https://sell.integration-hotfix.remixshop.dev/&#39;
+116:       config.consApiURL = &#39;https://cons.integration-hotfix.remixshop.dev:443&#39;
+117:       config.consURL = &#39;https://cleanout.integration-hotfix.remixshop.dev/&#39;
+118:       config.whURL = &#39;https://warehouse.integration-hotfix.remixshop.dev/&#39;
+119:       config.kqURL = &#39;https://192.168.90.8:X/&#39;
+120:       config.kqConsURL = &#39;https://192.168.90.8:X/&#39;
+121:       config.kqErpURL = &#39;https://192.168.90.8:X/&#39;
+122:       config.LadminURL = &#39;https://integration-hotfix.remixshop.dev/admin/&#39;
+123:       config.y1ApiErpURL = &#39;https://erp-integration-hotfix.remixshop.dev/api/&#39;
+124:       config.y2ApiErpURL = &#39;https://eapi.integration-hotfix.remixshop.dev/&#39;
+125:       config.y1ApiWHURL = &#39;https://integration-hotfix.remixshop.dev/warehouse/api/&#39;
+126:       config.kqConslURL = &#39;https://192.168.20.166:4667/&#39;
+127:       config.kqNewlURL = &#39;https://192.168.20.166:4666/&#39;
+128:       config.kqRedShift = &#39;https://192.168.20.166:4669/&#39;
+129:       config.inputGridURL = &#39;https://input-grid-backend.integration-hotfix.remixshop.dev/&#39;
+130:      }
+131:      if (env == &#39;live&#39;) {
+132:       config.baseURL = &#39;https://remixshop.com/&#39;
+133:       config.y2ApiURL = &#39;https://api.remixshop.com/&#39;
+134:       config.y1ApiURL = &#39;https://remixshop.com/&#39;
+135:       config.ordersURL = &#39;https://admin.remixshop.dev/&#39;
+136:       config.mfpURL = &#39;https://sell.remixshop.com/&#39;
+137:       config.consURL = &#39;https://cleanout.remixshop.com/&#39;
+138:       config.raas = &#39;https://tommy.remixwidget.com/&#39;
+139:       config.raasAdmin = &#39;https://raas-admin.remixshop.dev/#/&#39;
+140:      }
+141:      //Cronicle
+142:      if (env == &#39;devcronicle&#39;) {
+143:       config.baseURL = &#39;http://cronicle.rx.remixshop.com/&#39;
+144:      }
+145:      
+146:     // don&#39;t waste time waiting for a connection or if servers don&#39;t respond within 15 seconds
+147:     karate.configure(&#39;retry&#39;, { count: 6, interval: 3000 });
+148:     karate.configure(&#39;connectTimeout&#39;, 25000);
+149:     karate.configure(&#39;readTimeout&#39;, 20000);
+150: 
+151:     //OPTION 1: by default locally Chrome:
+152:     karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, addOptions: [&quot;--remote-allow-origins=*&quot;, &#39;--disable-search-engine-choice-screen&#39;, &#39;--disable-infobars&#39;,&#39;--no-first-run&#39;,&#39;--disable-notifications&#39;, &#39;--disable-features=PasswordLeakDetection&#39;], showDriverLog: false });
+153:     //OPTION 1 PLUS headerProxy!!!
+154:     //karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, addOptions: [&quot;--remote-allow-origins=*&quot;, &quot;--load-extension=&quot; + extensionPath], showDriverLog: false, });
+155:     //OPTION 2: docker container with Chromium, on M mac (arm) runs
+156:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;justinribeiro/chrome-headless:chromium&#39;, showDriverLog: true  });
+157:     //OPTION 3: docker container for Linux/Windows
+158:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;justinribeiro/chrome-headless:stable&#39;, showDriverLog: false });
+159:     //OPTION 4: Karate supported full featured container, with script video recording
+160:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;karatelabs/karate-chrome&#39;, showDriverLog: true })
+161:     //OPTION 5: mozilla
+162:     //karate.configure(&#39;driver&#39;, { type: &#39;geckodriver&#39;, executable: &#39;geckodriver.exe&#39; });
+163:     //OPTION 6: Chrome for testing:
+164:     //karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, executable: chromeExecutable, addOptions: [ &quot;--remote-allow-origins=*&quot;, &quot;--disable-popup-blocking&quot;, &quot;--disable-infobars&quot;, &quot;--no-first-run&quot;, &quot;--no-default-browser-check&quot;, &quot;--start-maximized&quot;, &quot;--disable-features=DefaultBrowserSettingEnabled&quot;, &quot;--disable-component-update&quot;, &quot;--disable-background-networking&quot;, &quot;--safebrowsing-disable-auto-update&quot;, &quot;--disable-sync&quot;, &quot;--disable-background-extensions&quot;, &quot;--disable-background-timer-throttling&quot;, &quot;--disable-client-side-phishing-detection&quot;, &quot;--disable-web-security&quot;, &quot;--test-type&quot;, &quot;--disable-gpu&quot;, &quot;--allow-running-insecure-content&quot;, &quot;--ignore-certificate-errors&quot;, &quot;--disable-translate&quot;, &quot;--disable-dev-shm-usage&quot;, &quot;--disable-default-apps&quot;, &quot;--disable-notifications&quot;, &quot;--disable-logging&quot;, &quot;--no-default-browser-check&quot;, &quot;--disable-blink-features=AutomationControlled&quot;, &quot;--remote-debugging-port=9222&quot; ], webDriverSession: { capabilities: { &#39;goog:chromeOptions&#39;: { prefs: { &#39;search_provider&#39;: { &#39;name&#39;: &#39;Google&#39;, &#39;keyword&#39;: &#39;google.com&#39;, &#39;search_url&#39;: &#39;https://www.google.com/search?q={searchTerms}&#39;, &#39;favicon_url&#39;: &#39;https://www.google.com/favicon.ico&#39; }, &#39;intl.accept_languages&#39;: &#39;en-US&#39;, &#39;profile&#39;: { &#39;password_manager_enabled&#39;: false }, &#39;credentials_enable_service&#39;: false }, &#39;useAutomationExtension&#39;: false, &#39;excludeSwitches&#39;: [&#39;enable-automation&#39;] } } }, showDriverLog: true });
+165:     //Configure the global afterScenario (where ping to Slack is performed on test failure)
+166:     karate.configure(&#39;afterScenario&#39;, read(&#39;classpath:afterSlack.js&#39;));
+167: 
+168:     var android = {};
+169:     android[&quot;desiredConfig&quot;] = {
+170:       alwaysMatch: {
+171:         &quot;appium:app&quot;: &quot;/Users/lyubomirlyubenov/Downloads/app-release.apk&quot;,
+172:         &quot;appium:newCommandTimeout&quot;: 300,
+173:         &quot;appium:platformVersion&quot;: &quot;14.0&quot;,
+174:         &quot;appium:platformName&quot;: &quot;Android&quot;,
+175:         &quot;appium:connectHardwareKeyboard&quot;: true,
+176:         &quot;appium:deviceName&quot;: &quot;emulator-5554&quot;,
+177:         &quot;appium:avd&quot;: &quot;Pixel_6a_API_34&quot;,
+178:         &quot;appium:automationName&quot;: &quot;UiAutomator2&quot;
+179:       },
+180:       firstMatch: [{}]
+181:     };
+182:     config[&quot;android&quot;] = android;
+183:     return config;
+184:   }    
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: afterSlack.js
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- &lt;js&gt;.fn(Unnamed:166)
+
+apptest/android.feature:4
+apptest/android.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>driver { webDriverSession: { capabilities: { alwaysMatch: &quot;#(android.desiredConfig.alwaysMatch)&quot;, firstMatch: &quot;#(android.desiredConfig.firstMatch)&quot; } } }</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">09:07:09.017 apptest/android.feature:8
+Given driver { webDriverSession: { capabilities: { alwaysMatch: &quot;#(android.desiredConfig.alwaysMatch)&quot;, firstMatch: &quot;#(android.desiredConfig.firstMatch)&quot; } } }
+&gt;&gt; apptest/android.feature:6
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: afterSlack.js
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env;  //  &lt;set this only when set for CI execution - karate parameter e=locale
+03:   //java -jar karate-1.3.0.jar website/OrdersBG.feature -e=dev
+04:   karate.log(&#39;karate.env system property was:&#39;, env);
+05:   
+06:   if (!env) {
+07:     env = &#39;dev&#39;; // a custom &#39;intelligent&#39; default
+08:   }
+09:     //Default defaults (dev environment + bg market)
+10:     var config = {baseURL: &#39;https://qa.remixshop.dev/&#39;, market: &#39;bg&#39;}; 
+11:     function getResourcePath(resource) {
+12:       var File = Java.type(&#39;java.io.File&#39;);
+13:       var Paths = Java.type(&#39;java.nio.file.Paths&#39;);
+14:       var path = Paths.get(&#39;util&#39;, resource).toAbsolutePath().toString();
+15:       return path;
+16:     }
+17:     var extensionPath = getResourcePath(&#39;chrome-extension&#39;);
+18:     
+19:     //Need for Chrome for testing
+20:     var projectDir = karate.properties[&#39;user.dir&#39;];
+21:     var chromeExecutable = projectDir + &#39;/.vscode/chrome/mac_arm/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing&#39;;
+22: 
+23:     //Website
+24:     if (env == &#39;dev&#39;) {
+25:       config.baseURL = &#39;https://qa.remixshop.dev/&#39;
+26:       config.y1ApiURL = &#39;https://qa.remixshop.dev/api/&#39;
+27:       config.y2ApiURL = &#39;https://api.qa.remixshop.dev/&#39;
+28:       config.newAdminURL = &#39;https://orders.qa.remixshop.dev/&#39;
+29:       config.idURL = &#39;https://my.qa.remixshop.dev/&#39;
+30:       config.mfpURL = &#39;https://sell.qa.remixshop.dev/&#39;
+31:       config.consApiURL = &#39;https://cons.qa.remixshop.dev:443&#39;
+32:       config.consURL = &#39;https://cleanout.qa.remixshop.dev/&#39;
+33:       config.whURL = &#39;https://warehouse.qa.remixshop.dev/&#39;
+34:       config.kqURL = &#39;https://192.168.90.8:3059/&#39;
+35:       config.kqConsURL = &#39;https://192.168.90.8:3061/&#39;
+36:       config.kqErpURL = &#39;https://192.168.90.8:3065/&#39;
+37:       config.LadminURL = &#39;https://qa.remixshop.dev/admin/&#39;
+38:       config.y1ApiErpURL = &#39;https://erp-qa.remixshop.dev/api/&#39;
+39:       config.y2ApiErpURL = &#39;https://eapi.qa.remixshop.dev/&#39;
+40:       config.y1ApiWHURL = &#39;https://qa.remixshop.dev/warehouse/api/&#39;
+41:       config.kqConslURL = &#39;https://192.168.20.166:4667/&#39;
+42:       config.kqNewlURL = &#39;https://192.168.20.166:4666/&#39;
+43:       config.kqRedShift = &#39;https://192.168.20.166:4669/&#39;
+44:       config.kqPricinglURL = &#39;https://192.168.20.166:4671/&#39;
+45:       config.nERP = &#39;https://erp.qa.remixshop.dev/&#39;
+46:       config.oERP = &#39;https://erp-qa.remixshop.dev/&#39;
+47:       config.inputGridURL = &#39;https://input-grid-backend.qa.remixshop.dev/&#39;
+48:       config.raas = &#39;https://tommy.qa.remixwidget.com/?lang=de&#39;
+49:       config.raasEn = &#39;https://tommy.qa.remixwidget.com/?lang=en&#39;
+50:       config.raasAdmin = &#39;https://raas-admin.qa.remixshop.dev/#/&#39;
+51:      }
+52:      if (env == &#39;integration&#39;) {
+53:       config.baseURL = &#39;https://integration.remixshop.dev/&#39;
+54:       config.y1ApiURL = &#39;https://integration.remixshop.dev/api/&#39;
+55:       config.y2ApiURL = &#39;https://api.integration.remixshop.dev/&#39;
+56:       config.ordersURL = &#39;https://orders.integration.remixshop.dev/&#39;
+57:       config.idURL = &#39;https://my.integration.remixshop.dev/&#39;
+58:       config.mfpURL = &#39;https://sell.integration.remixshop.dev/&#39;
+59:       config.consApiURL = &#39;https://cons.integration.remixshop.dev:443&#39;
+60:       config.consURL = &#39;https://cleanout.integration.remixshop.dev/&#39;
+61:       config.whURL = &#39;https://warehouse.integration.remixshop.dev/&#39;
+62:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+63:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+64:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+65:       config.LadminURL = &#39;https://integration.remixshop.dev/admin/&#39;
+66:       config.y1ApiErpURL = &#39;https://erp-integration.remixshop.dev/api/&#39;
+67:       config.y2ApiErpURL = &#39;https://eapi.integration.remixshop.dev/&#39;
+68:       config.y1ApiWHURL = &#39;https://integration.remixshop.dev/warehouse/api/&#39;
+69:       config.inputGridURL = &#39;https://input-grid-backend.integration.remixshop.dev/&#39;
+70:      }
+71:      if (env == &#39;integration-feature-one&#39;) {
+72:       config.baseURL = &#39;https://integration-feature-one.remixshop.dev/&#39;
+73:       config.y1ApiURL = &#39;https://integration-feature-one.remixshop.dev/api/&#39;
+74:       config.y2ApiURL = &#39;https://api.integration-feature-one.remixshop.dev/&#39;
+75:       config.ordersURL = &#39;https://orders.integration-feature-one.remixshop.dev/&#39;
+76:       config.idURL = &#39;https://my.integration-feature-one.remixshop.dev/&#39;
+77:       config.mfpURL = &#39;https://sell.integration-feature-one.remixshop.dev/&#39;
+78:       config.consApiURL = &#39;https://cons.integration-feature-one.remixshop.dev:443&#39;
+79:       config.consURL = &#39;https://cleanout.integration-feature-one.remixshop.dev/&#39;
+80:       config.whURL = &#39;https://warehouse.integration-feature-one.remixshop.dev/&#39;
+81:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+82:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+83:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+84:       config.LadminURL = &#39;https://integration-feature-one.remixshop.dev/admin/&#39;
+85:       config.y1ApiErpURL = &#39;https://erp-integration-feature-one.remixshop.dev/api/&#39;
+86:       config.y2ApiErpURL = &#39;https://eapi.integration-feature-one.remixshop.dev/&#39;
+87:       config.y1ApiWHURL = &#39;https://integration-feature-one.remixshop.dev/warehouse/api/&#39;
+88:       config.inputGridURL = &#39;https://input-grid-backend.integration-feature-one.remixshop.dev/&#39;
+89:      }
+90:      if (env == &#39;integration-feature-two&#39;) {
+91:       config.baseURL = &#39;https://integration-feature-two.remixshop.dev/&#39;
+92:       config.y1ApiURL = &#39;https://integration-feature-two.remixshop.dev/api/&#39;
+93:       config.y2ApiURL = &#39;https://api.integration-feature-two.remixshop.dev/&#39;
+94:       config.ordersURL = &#39;https://orders.integration-feature-two.remixshop.dev/&#39;
+95:       config.idURL = &#39;https://my.integration-feature-two.remixshop.dev/&#39;
+96:       config.mfpURL = &#39;https://sell.integration-feature-two.remixshop.dev/&#39;
+97:       config.consApiURL = &#39;https://cons.integration-feature-two.remixshop.dev:443&#39;
+98:       config.consURL = &#39;https://cleanout.integration-feature-two.remixshop.dev/&#39;
+99:       config.whURL = &#39;https://warehouse.integration-feature-two.remixshop.dev/&#39;
+100:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+101:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+102:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+103:       config.LadminURL = &#39;https://integration-feature-two.remixshop.dev/admin/&#39;
+104:       config.y1ApiErpURL = &#39;https://erp-integration-feature-two.remixshop.dev/api/&#39;
+105:       config.y2ApiErpURL = &#39;https://eapi.integration-feature-two.remixshop.dev/&#39;
+106:       config.y1ApiWHURL = &#39;https://integration-feature-two.remixshop.dev/warehouse/api/&#39;
+107:       config.inputGridURL = &#39;https://input-grid-backend.integration-feature-two.remixshop.dev/&#39;
+108:      }
+109:      if (env == &#39;hotfix&#39;) {
+110:       config.baseURL = &#39;https://integration-hotfix.remixshop.dev/&#39;
+111:       config.y1ApiURL = &#39;https://integration-hotfix.remixshop.dev/api/&#39;
+112:       config.y2ApiURL = &#39;https://api.integration-hotfix.remixshop.dev/&#39;
+113:       config.ordersURL = &#39;https://orders.integration-hotfix.remixshop.dev/&#39;
+114:       config.idURL = &#39;https://my.integration-hotfix.remixshop.dev/&#39;
+115:       config.mfpURL = &#39;https://sell.integration-hotfix.remixshop.dev/&#39;
+116:       config.consApiURL = &#39;https://cons.integration-hotfix.remixshop.dev:443&#39;
+117:       config.consURL = &#39;https://cleanout.integration-hotfix.remixshop.dev/&#39;
+118:       config.whURL = &#39;https://warehouse.integration-hotfix.remixshop.dev/&#39;
+119:       config.kqURL = &#39;https://192.168.90.8:X/&#39;
+120:       config.kqConsURL = &#39;https://192.168.90.8:X/&#39;
+121:       config.kqErpURL = &#39;https://192.168.90.8:X/&#39;
+122:       config.LadminURL = &#39;https://integration-hotfix.remixshop.dev/admin/&#39;
+123:       config.y1ApiErpURL = &#39;https://erp-integration-hotfix.remixshop.dev/api/&#39;
+124:       config.y2ApiErpURL = &#39;https://eapi.integration-hotfix.remixshop.dev/&#39;
+125:       config.y1ApiWHURL = &#39;https://integration-hotfix.remixshop.dev/warehouse/api/&#39;
+126:       config.kqConslURL = &#39;https://192.168.20.166:4667/&#39;
+127:       config.kqNewlURL = &#39;https://192.168.20.166:4666/&#39;
+128:       config.kqRedShift = &#39;https://192.168.20.166:4669/&#39;
+129:       config.inputGridURL = &#39;https://input-grid-backend.integration-hotfix.remixshop.dev/&#39;
+130:      }
+131:      if (env == &#39;live&#39;) {
+132:       config.baseURL = &#39;https://remixshop.com/&#39;
+133:       config.y2ApiURL = &#39;https://api.remixshop.com/&#39;
+134:       config.y1ApiURL = &#39;https://remixshop.com/&#39;
+135:       config.ordersURL = &#39;https://admin.remixshop.dev/&#39;
+136:       config.mfpURL = &#39;https://sell.remixshop.com/&#39;
+137:       config.consURL = &#39;https://cleanout.remixshop.com/&#39;
+138:       config.raas = &#39;https://tommy.remixwidget.com/&#39;
+139:       config.raasAdmin = &#39;https://raas-admin.remixshop.dev/#/&#39;
+140:      }
+141:      //Cronicle
+142:      if (env == &#39;devcronicle&#39;) {
+143:       config.baseURL = &#39;http://cronicle.rx.remixshop.com/&#39;
+144:      }
+145:      
+146:     // don&#39;t waste time waiting for a connection or if servers don&#39;t respond within 15 seconds
+147:     karate.configure(&#39;retry&#39;, { count: 6, interval: 3000 });
+148:     karate.configure(&#39;connectTimeout&#39;, 25000);
+149:     karate.configure(&#39;readTimeout&#39;, 20000);
+150: 
+151:     //OPTION 1: by default locally Chrome:
+152:     karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, addOptions: [&quot;--remote-allow-origins=*&quot;, &#39;--disable-search-engine-choice-screen&#39;, &#39;--disable-infobars&#39;,&#39;--no-first-run&#39;,&#39;--disable-notifications&#39;, &#39;--disable-features=PasswordLeakDetection&#39;], showDriverLog: false });
+153:     //OPTION 1 PLUS headerProxy!!!
+154:     //karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, addOptions: [&quot;--remote-allow-origins=*&quot;, &quot;--load-extension=&quot; + extensionPath], showDriverLog: false, });
+155:     //OPTION 2: docker container with Chromium, on M mac (arm) runs
+156:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;justinribeiro/chrome-headless:chromium&#39;, showDriverLog: true  });
+157:     //OPTION 3: docker container for Linux/Windows
+158:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;justinribeiro/chrome-headless:stable&#39;, showDriverLog: false });
+159:     //OPTION 4: Karate supported full featured container, with script video recording
+160:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;karatelabs/karate-chrome&#39;, showDriverLog: true })
+161:     //OPTION 5: mozilla
+162:     //karate.configure(&#39;driver&#39;, { type: &#39;geckodriver&#39;, executable: &#39;geckodriver.exe&#39; });
+163:     //OPTION 6: Chrome for testing:
+164:     //karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, executable: chromeExecutable, addOptions: [ &quot;--remote-allow-origins=*&quot;, &quot;--disable-popup-blocking&quot;, &quot;--disable-infobars&quot;, &quot;--no-first-run&quot;, &quot;--no-default-browser-check&quot;, &quot;--start-maximized&quot;, &quot;--disable-features=DefaultBrowserSettingEnabled&quot;, &quot;--disable-component-update&quot;, &quot;--disable-background-networking&quot;, &quot;--safebrowsing-disable-auto-update&quot;, &quot;--disable-sync&quot;, &quot;--disable-background-extensions&quot;, &quot;--disable-background-timer-throttling&quot;, &quot;--disable-client-side-phishing-detection&quot;, &quot;--disable-web-security&quot;, &quot;--test-type&quot;, &quot;--disable-gpu&quot;, &quot;--allow-running-insecure-content&quot;, &quot;--ignore-certificate-errors&quot;, &quot;--disable-translate&quot;, &quot;--disable-dev-shm-usage&quot;, &quot;--disable-default-apps&quot;, &quot;--disable-notifications&quot;, &quot;--disable-logging&quot;, &quot;--no-default-browser-check&quot;, &quot;--disable-blink-features=AutomationControlled&quot;, &quot;--remote-debugging-port=9222&quot; ], webDriverSession: { capabilities: { &#39;goog:chromeOptions&#39;: { prefs: { &#39;search_provider&#39;: { &#39;name&#39;: &#39;Google&#39;, &#39;keyword&#39;: &#39;google.com&#39;, &#39;search_url&#39;: &#39;https://www.google.com/search?q={searchTerms}&#39;, &#39;favicon_url&#39;: &#39;https://www.google.com/favicon.ico&#39; }, &#39;intl.accept_languages&#39;: &#39;en-US&#39;, &#39;profile&#39;: { &#39;password_manager_enabled&#39;: false }, &#39;credentials_enable_service&#39;: false }, &#39;useAutomationExtension&#39;: false, &#39;excludeSwitches&#39;: [&#39;enable-automation&#39;] } } }, showDriverLog: true });
+165:     //Configure the global afterScenario (where ping to Slack is performed on test failure)
+166:     karate.configure(&#39;afterScenario&#39;, read(&#39;classpath:afterSlack.js&#39;));
+167: 
+168:     var android = {};
+169:     android[&quot;desiredConfig&quot;] = {
+170:       alwaysMatch: {
+171:         &quot;appium:app&quot;: &quot;/Users/lyubomirlyubenov/Downloads/app-release.apk&quot;,
+172:         &quot;appium:newCommandTimeout&quot;: 300,
+173:         &quot;appium:platformVersion&quot;: &quot;14.0&quot;,
+174:         &quot;appium:platformName&quot;: &quot;Android&quot;,
+175:         &quot;appium:connectHardwareKeyboard&quot;: true,
+176:         &quot;appium:deviceName&quot;: &quot;emulator-5554&quot;,
+177:         &quot;appium:avd&quot;: &quot;Pixel_6a_API_34&quot;,
+178:         &quot;appium:automationName&quot;: &quot;UiAutomator2&quot;
+179:       },
+180:       firstMatch: [{}]
+181:     };
+182:     config[&quot;android&quot;] = android;
+183:     return config;
+184:   }    
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: afterSlack.js
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- &lt;js&gt;.fn(Unnamed:166)
+
+apptest/android.feature:4
+apptest/android.feature:7
+apptest/android.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>delay(300000000)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">09:07:09.018 apptest/android.feature:9
+* delay(300000000)
+&gt;&gt; apptest/android.feature:6
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: afterSlack.js
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env;  //  &lt;set this only when set for CI execution - karate parameter e=locale
+03:   //java -jar karate-1.3.0.jar website/OrdersBG.feature -e=dev
+04:   karate.log(&#39;karate.env system property was:&#39;, env);
+05:   
+06:   if (!env) {
+07:     env = &#39;dev&#39;; // a custom &#39;intelligent&#39; default
+08:   }
+09:     //Default defaults (dev environment + bg market)
+10:     var config = {baseURL: &#39;https://qa.remixshop.dev/&#39;, market: &#39;bg&#39;}; 
+11:     function getResourcePath(resource) {
+12:       var File = Java.type(&#39;java.io.File&#39;);
+13:       var Paths = Java.type(&#39;java.nio.file.Paths&#39;);
+14:       var path = Paths.get(&#39;util&#39;, resource).toAbsolutePath().toString();
+15:       return path;
+16:     }
+17:     var extensionPath = getResourcePath(&#39;chrome-extension&#39;);
+18:     
+19:     //Need for Chrome for testing
+20:     var projectDir = karate.properties[&#39;user.dir&#39;];
+21:     var chromeExecutable = projectDir + &#39;/.vscode/chrome/mac_arm/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing&#39;;
+22: 
+23:     //Website
+24:     if (env == &#39;dev&#39;) {
+25:       config.baseURL = &#39;https://qa.remixshop.dev/&#39;
+26:       config.y1ApiURL = &#39;https://qa.remixshop.dev/api/&#39;
+27:       config.y2ApiURL = &#39;https://api.qa.remixshop.dev/&#39;
+28:       config.newAdminURL = &#39;https://orders.qa.remixshop.dev/&#39;
+29:       config.idURL = &#39;https://my.qa.remixshop.dev/&#39;
+30:       config.mfpURL = &#39;https://sell.qa.remixshop.dev/&#39;
+31:       config.consApiURL = &#39;https://cons.qa.remixshop.dev:443&#39;
+32:       config.consURL = &#39;https://cleanout.qa.remixshop.dev/&#39;
+33:       config.whURL = &#39;https://warehouse.qa.remixshop.dev/&#39;
+34:       config.kqURL = &#39;https://192.168.90.8:3059/&#39;
+35:       config.kqConsURL = &#39;https://192.168.90.8:3061/&#39;
+36:       config.kqErpURL = &#39;https://192.168.90.8:3065/&#39;
+37:       config.LadminURL = &#39;https://qa.remixshop.dev/admin/&#39;
+38:       config.y1ApiErpURL = &#39;https://erp-qa.remixshop.dev/api/&#39;
+39:       config.y2ApiErpURL = &#39;https://eapi.qa.remixshop.dev/&#39;
+40:       config.y1ApiWHURL = &#39;https://qa.remixshop.dev/warehouse/api/&#39;
+41:       config.kqConslURL = &#39;https://192.168.20.166:4667/&#39;
+42:       config.kqNewlURL = &#39;https://192.168.20.166:4666/&#39;
+43:       config.kqRedShift = &#39;https://192.168.20.166:4669/&#39;
+44:       config.kqPricinglURL = &#39;https://192.168.20.166:4671/&#39;
+45:       config.nERP = &#39;https://erp.qa.remixshop.dev/&#39;
+46:       config.oERP = &#39;https://erp-qa.remixshop.dev/&#39;
+47:       config.inputGridURL = &#39;https://input-grid-backend.qa.remixshop.dev/&#39;
+48:       config.raas = &#39;https://tommy.qa.remixwidget.com/?lang=de&#39;
+49:       config.raasEn = &#39;https://tommy.qa.remixwidget.com/?lang=en&#39;
+50:       config.raasAdmin = &#39;https://raas-admin.qa.remixshop.dev/#/&#39;
+51:      }
+52:      if (env == &#39;integration&#39;) {
+53:       config.baseURL = &#39;https://integration.remixshop.dev/&#39;
+54:       config.y1ApiURL = &#39;https://integration.remixshop.dev/api/&#39;
+55:       config.y2ApiURL = &#39;https://api.integration.remixshop.dev/&#39;
+56:       config.ordersURL = &#39;https://orders.integration.remixshop.dev/&#39;
+57:       config.idURL = &#39;https://my.integration.remixshop.dev/&#39;
+58:       config.mfpURL = &#39;https://sell.integration.remixshop.dev/&#39;
+59:       config.consApiURL = &#39;https://cons.integration.remixshop.dev:443&#39;
+60:       config.consURL = &#39;https://cleanout.integration.remixshop.dev/&#39;
+61:       config.whURL = &#39;https://warehouse.integration.remixshop.dev/&#39;
+62:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+63:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+64:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+65:       config.LadminURL = &#39;https://integration.remixshop.dev/admin/&#39;
+66:       config.y1ApiErpURL = &#39;https://erp-integration.remixshop.dev/api/&#39;
+67:       config.y2ApiErpURL = &#39;https://eapi.integration.remixshop.dev/&#39;
+68:       config.y1ApiWHURL = &#39;https://integration.remixshop.dev/warehouse/api/&#39;
+69:       config.inputGridURL = &#39;https://input-grid-backend.integration.remixshop.dev/&#39;
+70:      }
+71:      if (env == &#39;integration-feature-one&#39;) {
+72:       config.baseURL = &#39;https://integration-feature-one.remixshop.dev/&#39;
+73:       config.y1ApiURL = &#39;https://integration-feature-one.remixshop.dev/api/&#39;
+74:       config.y2ApiURL = &#39;https://api.integration-feature-one.remixshop.dev/&#39;
+75:       config.ordersURL = &#39;https://orders.integration-feature-one.remixshop.dev/&#39;
+76:       config.idURL = &#39;https://my.integration-feature-one.remixshop.dev/&#39;
+77:       config.mfpURL = &#39;https://sell.integration-feature-one.remixshop.dev/&#39;
+78:       config.consApiURL = &#39;https://cons.integration-feature-one.remixshop.dev:443&#39;
+79:       config.consURL = &#39;https://cleanout.integration-feature-one.remixshop.dev/&#39;
+80:       config.whURL = &#39;https://warehouse.integration-feature-one.remixshop.dev/&#39;
+81:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+82:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+83:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+84:       config.LadminURL = &#39;https://integration-feature-one.remixshop.dev/admin/&#39;
+85:       config.y1ApiErpURL = &#39;https://erp-integration-feature-one.remixshop.dev/api/&#39;
+86:       config.y2ApiErpURL = &#39;https://eapi.integration-feature-one.remixshop.dev/&#39;
+87:       config.y1ApiWHURL = &#39;https://integration-feature-one.remixshop.dev/warehouse/api/&#39;
+88:       config.inputGridURL = &#39;https://input-grid-backend.integration-feature-one.remixshop.dev/&#39;
+89:      }
+90:      if (env == &#39;integration-feature-two&#39;) {
+91:       config.baseURL = &#39;https://integration-feature-two.remixshop.dev/&#39;
+92:       config.y1ApiURL = &#39;https://integration-feature-two.remixshop.dev/api/&#39;
+93:       config.y2ApiURL = &#39;https://api.integration-feature-two.remixshop.dev/&#39;
+94:       config.ordersURL = &#39;https://orders.integration-feature-two.remixshop.dev/&#39;
+95:       config.idURL = &#39;https://my.integration-feature-two.remixshop.dev/&#39;
+96:       config.mfpURL = &#39;https://sell.integration-feature-two.remixshop.dev/&#39;
+97:       config.consApiURL = &#39;https://cons.integration-feature-two.remixshop.dev:443&#39;
+98:       config.consURL = &#39;https://cleanout.integration-feature-two.remixshop.dev/&#39;
+99:       config.whURL = &#39;https://warehouse.integration-feature-two.remixshop.dev/&#39;
+100:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+101:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+102:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+103:       config.LadminURL = &#39;https://integration-feature-two.remixshop.dev/admin/&#39;
+104:       config.y1ApiErpURL = &#39;https://erp-integration-feature-two.remixshop.dev/api/&#39;
+105:       config.y2ApiErpURL = &#39;https://eapi.integration-feature-two.remixshop.dev/&#39;
+106:       config.y1ApiWHURL = &#39;https://integration-feature-two.remixshop.dev/warehouse/api/&#39;
+107:       config.inputGridURL = &#39;https://input-grid-backend.integration-feature-two.remixshop.dev/&#39;
+108:      }
+109:      if (env == &#39;hotfix&#39;) {
+110:       config.baseURL = &#39;https://integration-hotfix.remixshop.dev/&#39;
+111:       config.y1ApiURL = &#39;https://integration-hotfix.remixshop.dev/api/&#39;
+112:       config.y2ApiURL = &#39;https://api.integration-hotfix.remixshop.dev/&#39;
+113:       config.ordersURL = &#39;https://orders.integration-hotfix.remixshop.dev/&#39;
+114:       config.idURL = &#39;https://my.integration-hotfix.remixshop.dev/&#39;
+115:       config.mfpURL = &#39;https://sell.integration-hotfix.remixshop.dev/&#39;
+116:       config.consApiURL = &#39;https://cons.integration-hotfix.remixshop.dev:443&#39;
+117:       config.consURL = &#39;https://cleanout.integration-hotfix.remixshop.dev/&#39;
+118:       config.whURL = &#39;https://warehouse.integration-hotfix.remixshop.dev/&#39;
+119:       config.kqURL = &#39;https://192.168.90.8:X/&#39;
+120:       config.kqConsURL = &#39;https://192.168.90.8:X/&#39;
+121:       config.kqErpURL = &#39;https://192.168.90.8:X/&#39;
+122:       config.LadminURL = &#39;https://integration-hotfix.remixshop.dev/admin/&#39;
+123:       config.y1ApiErpURL = &#39;https://erp-integration-hotfix.remixshop.dev/api/&#39;
+124:       config.y2ApiErpURL = &#39;https://eapi.integration-hotfix.remixshop.dev/&#39;
+125:       config.y1ApiWHURL = &#39;https://integration-hotfix.remixshop.dev/warehouse/api/&#39;
+126:       config.kqConslURL = &#39;https://192.168.20.166:4667/&#39;
+127:       config.kqNewlURL = &#39;https://192.168.20.166:4666/&#39;
+128:       config.kqRedShift = &#39;https://192.168.20.166:4669/&#39;
+129:       config.inputGridURL = &#39;https://input-grid-backend.integration-hotfix.remixshop.dev/&#39;
+130:      }
+131:      if (env == &#39;live&#39;) {
+132:       config.baseURL = &#39;https://remixshop.com/&#39;
+133:       config.y2ApiURL = &#39;https://api.remixshop.com/&#39;
+134:       config.y1ApiURL = &#39;https://remixshop.com/&#39;
+135:       config.ordersURL = &#39;https://admin.remixshop.dev/&#39;
+136:       config.mfpURL = &#39;https://sell.remixshop.com/&#39;
+137:       config.consURL = &#39;https://cleanout.remixshop.com/&#39;
+138:       config.raas = &#39;https://tommy.remixwidget.com/&#39;
+139:       config.raasAdmin = &#39;https://raas-admin.remixshop.dev/#/&#39;
+140:      }
+141:      //Cronicle
+142:      if (env == &#39;devcronicle&#39;) {
+143:       config.baseURL = &#39;http://cronicle.rx.remixshop.com/&#39;
+144:      }
+145:      
+146:     // don&#39;t waste time waiting for a connection or if servers don&#39;t respond within 15 seconds
+147:     karate.configure(&#39;retry&#39;, { count: 6, interval: 3000 });
+148:     karate.configure(&#39;connectTimeout&#39;, 25000);
+149:     karate.configure(&#39;readTimeout&#39;, 20000);
+150: 
+151:     //OPTION 1: by default locally Chrome:
+152:     karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, addOptions: [&quot;--remote-allow-origins=*&quot;, &#39;--disable-search-engine-choice-screen&#39;, &#39;--disable-infobars&#39;,&#39;--no-first-run&#39;,&#39;--disable-notifications&#39;, &#39;--disable-features=PasswordLeakDetection&#39;], showDriverLog: false });
+153:     //OPTION 1 PLUS headerProxy!!!
+154:     //karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, addOptions: [&quot;--remote-allow-origins=*&quot;, &quot;--load-extension=&quot; + extensionPath], showDriverLog: false, });
+155:     //OPTION 2: docker container with Chromium, on M mac (arm) runs
+156:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;justinribeiro/chrome-headless:chromium&#39;, showDriverLog: true  });
+157:     //OPTION 3: docker container for Linux/Windows
+158:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;justinribeiro/chrome-headless:stable&#39;, showDriverLog: false });
+159:     //OPTION 4: Karate supported full featured container, with script video recording
+160:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;karatelabs/karate-chrome&#39;, showDriverLog: true })
+161:     //OPTION 5: mozilla
+162:     //karate.configure(&#39;driver&#39;, { type: &#39;geckodriver&#39;, executable: &#39;geckodriver.exe&#39; });
+163:     //OPTION 6: Chrome for testing:
+164:     //karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, executable: chromeExecutable, addOptions: [ &quot;--remote-allow-origins=*&quot;, &quot;--disable-popup-blocking&quot;, &quot;--disable-infobars&quot;, &quot;--no-first-run&quot;, &quot;--no-default-browser-check&quot;, &quot;--start-maximized&quot;, &quot;--disable-features=DefaultBrowserSettingEnabled&quot;, &quot;--disable-component-update&quot;, &quot;--disable-background-networking&quot;, &quot;--safebrowsing-disable-auto-update&quot;, &quot;--disable-sync&quot;, &quot;--disable-background-extensions&quot;, &quot;--disable-background-timer-throttling&quot;, &quot;--disable-client-side-phishing-detection&quot;, &quot;--disable-web-security&quot;, &quot;--test-type&quot;, &quot;--disable-gpu&quot;, &quot;--allow-running-insecure-content&quot;, &quot;--ignore-certificate-errors&quot;, &quot;--disable-translate&quot;, &quot;--disable-dev-shm-usage&quot;, &quot;--disable-default-apps&quot;, &quot;--disable-notifications&quot;, &quot;--disable-logging&quot;, &quot;--no-default-browser-check&quot;, &quot;--disable-blink-features=AutomationControlled&quot;, &quot;--remote-debugging-port=9222&quot; ], webDriverSession: { capabilities: { &#39;goog:chromeOptions&#39;: { prefs: { &#39;search_provider&#39;: { &#39;name&#39;: &#39;Google&#39;, &#39;keyword&#39;: &#39;google.com&#39;, &#39;search_url&#39;: &#39;https://www.google.com/search?q={searchTerms}&#39;, &#39;favicon_url&#39;: &#39;https://www.google.com/favicon.ico&#39; }, &#39;intl.accept_languages&#39;: &#39;en-US&#39;, &#39;profile&#39;: { &#39;password_manager_enabled&#39;: false }, &#39;credentials_enable_service&#39;: false }, &#39;useAutomationExtension&#39;: false, &#39;excludeSwitches&#39;: [&#39;enable-automation&#39;] } } }, showDriverLog: true });
+165:     //Configure the global afterScenario (where ping to Slack is performed on test failure)
+166:     karate.configure(&#39;afterScenario&#39;, read(&#39;classpath:afterSlack.js&#39;));
+167: 
+168:     var android = {};
+169:     android[&quot;desiredConfig&quot;] = {
+170:       alwaysMatch: {
+171:         &quot;appium:app&quot;: &quot;/Users/lyubomirlyubenov/Downloads/app-release.apk&quot;,
+172:         &quot;appium:newCommandTimeout&quot;: 300,
+173:         &quot;appium:platformVersion&quot;: &quot;14.0&quot;,
+174:         &quot;appium:platformName&quot;: &quot;Android&quot;,
+175:         &quot;appium:connectHardwareKeyboard&quot;: true,
+176:         &quot;appium:deviceName&quot;: &quot;emulator-5554&quot;,
+177:         &quot;appium:avd&quot;: &quot;Pixel_6a_API_34&quot;,
+178:         &quot;appium:automationName&quot;: &quot;UiAutomator2&quot;
+179:       },
+180:       firstMatch: [{}]
+181:     };
+182:     config[&quot;android&quot;] = android;
+183:     return config;
+184:   }    
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: afterSlack.js
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- &lt;js&gt;.fn(Unnamed:166)
+
+apptest/android.feature:4
+apptest/android.feature:7
+apptest/android.feature:8
+apptest/android.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Verify initial balance</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match driver.text(&#39;//android.widget.TextView[@resource-id=&quot;com.serheniuk.currencyconversion:id/balance&quot;]&#39;) == &#39;1001 EUR&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">09:07:09.018 apptest/android.feature:11
+* match driver.text(&#39;//android.widget.TextView[@resource-id=&quot;com.serheniuk.currencyconversion:id/balance&quot;]&#39;) == &#39;1001 EUR&#39;
+&gt;&gt; apptest/android.feature:6
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: afterSlack.js
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env;  //  &lt;set this only when set for CI execution - karate parameter e=locale
+03:   //java -jar karate-1.3.0.jar website/OrdersBG.feature -e=dev
+04:   karate.log(&#39;karate.env system property was:&#39;, env);
+05:   
+06:   if (!env) {
+07:     env = &#39;dev&#39;; // a custom &#39;intelligent&#39; default
+08:   }
+09:     //Default defaults (dev environment + bg market)
+10:     var config = {baseURL: &#39;https://qa.remixshop.dev/&#39;, market: &#39;bg&#39;}; 
+11:     function getResourcePath(resource) {
+12:       var File = Java.type(&#39;java.io.File&#39;);
+13:       var Paths = Java.type(&#39;java.nio.file.Paths&#39;);
+14:       var path = Paths.get(&#39;util&#39;, resource).toAbsolutePath().toString();
+15:       return path;
+16:     }
+17:     var extensionPath = getResourcePath(&#39;chrome-extension&#39;);
+18:     
+19:     //Need for Chrome for testing
+20:     var projectDir = karate.properties[&#39;user.dir&#39;];
+21:     var chromeExecutable = projectDir + &#39;/.vscode/chrome/mac_arm/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing&#39;;
+22: 
+23:     //Website
+24:     if (env == &#39;dev&#39;) {
+25:       config.baseURL = &#39;https://qa.remixshop.dev/&#39;
+26:       config.y1ApiURL = &#39;https://qa.remixshop.dev/api/&#39;
+27:       config.y2ApiURL = &#39;https://api.qa.remixshop.dev/&#39;
+28:       config.newAdminURL = &#39;https://orders.qa.remixshop.dev/&#39;
+29:       config.idURL = &#39;https://my.qa.remixshop.dev/&#39;
+30:       config.mfpURL = &#39;https://sell.qa.remixshop.dev/&#39;
+31:       config.consApiURL = &#39;https://cons.qa.remixshop.dev:443&#39;
+32:       config.consURL = &#39;https://cleanout.qa.remixshop.dev/&#39;
+33:       config.whURL = &#39;https://warehouse.qa.remixshop.dev/&#39;
+34:       config.kqURL = &#39;https://192.168.90.8:3059/&#39;
+35:       config.kqConsURL = &#39;https://192.168.90.8:3061/&#39;
+36:       config.kqErpURL = &#39;https://192.168.90.8:3065/&#39;
+37:       config.LadminURL = &#39;https://qa.remixshop.dev/admin/&#39;
+38:       config.y1ApiErpURL = &#39;https://erp-qa.remixshop.dev/api/&#39;
+39:       config.y2ApiErpURL = &#39;https://eapi.qa.remixshop.dev/&#39;
+40:       config.y1ApiWHURL = &#39;https://qa.remixshop.dev/warehouse/api/&#39;
+41:       config.kqConslURL = &#39;https://192.168.20.166:4667/&#39;
+42:       config.kqNewlURL = &#39;https://192.168.20.166:4666/&#39;
+43:       config.kqRedShift = &#39;https://192.168.20.166:4669/&#39;
+44:       config.kqPricinglURL = &#39;https://192.168.20.166:4671/&#39;
+45:       config.nERP = &#39;https://erp.qa.remixshop.dev/&#39;
+46:       config.oERP = &#39;https://erp-qa.remixshop.dev/&#39;
+47:       config.inputGridURL = &#39;https://input-grid-backend.qa.remixshop.dev/&#39;
+48:       config.raas = &#39;https://tommy.qa.remixwidget.com/?lang=de&#39;
+49:       config.raasEn = &#39;https://tommy.qa.remixwidget.com/?lang=en&#39;
+50:       config.raasAdmin = &#39;https://raas-admin.qa.remixshop.dev/#/&#39;
+51:      }
+52:      if (env == &#39;integration&#39;) {
+53:       config.baseURL = &#39;https://integration.remixshop.dev/&#39;
+54:       config.y1ApiURL = &#39;https://integration.remixshop.dev/api/&#39;
+55:       config.y2ApiURL = &#39;https://api.integration.remixshop.dev/&#39;
+56:       config.ordersURL = &#39;https://orders.integration.remixshop.dev/&#39;
+57:       config.idURL = &#39;https://my.integration.remixshop.dev/&#39;
+58:       config.mfpURL = &#39;https://sell.integration.remixshop.dev/&#39;
+59:       config.consApiURL = &#39;https://cons.integration.remixshop.dev:443&#39;
+60:       config.consURL = &#39;https://cleanout.integration.remixshop.dev/&#39;
+61:       config.whURL = &#39;https://warehouse.integration.remixshop.dev/&#39;
+62:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+63:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+64:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+65:       config.LadminURL = &#39;https://integration.remixshop.dev/admin/&#39;
+66:       config.y1ApiErpURL = &#39;https://erp-integration.remixshop.dev/api/&#39;
+67:       config.y2ApiErpURL = &#39;https://eapi.integration.remixshop.dev/&#39;
+68:       config.y1ApiWHURL = &#39;https://integration.remixshop.dev/warehouse/api/&#39;
+69:       config.inputGridURL = &#39;https://input-grid-backend.integration.remixshop.dev/&#39;
+70:      }
+71:      if (env == &#39;integration-feature-one&#39;) {
+72:       config.baseURL = &#39;https://integration-feature-one.remixshop.dev/&#39;
+73:       config.y1ApiURL = &#39;https://integration-feature-one.remixshop.dev/api/&#39;
+74:       config.y2ApiURL = &#39;https://api.integration-feature-one.remixshop.dev/&#39;
+75:       config.ordersURL = &#39;https://orders.integration-feature-one.remixshop.dev/&#39;
+76:       config.idURL = &#39;https://my.integration-feature-one.remixshop.dev/&#39;
+77:       config.mfpURL = &#39;https://sell.integration-feature-one.remixshop.dev/&#39;
+78:       config.consApiURL = &#39;https://cons.integration-feature-one.remixshop.dev:443&#39;
+79:       config.consURL = &#39;https://cleanout.integration-feature-one.remixshop.dev/&#39;
+80:       config.whURL = &#39;https://warehouse.integration-feature-one.remixshop.dev/&#39;
+81:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+82:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+83:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+84:       config.LadminURL = &#39;https://integration-feature-one.remixshop.dev/admin/&#39;
+85:       config.y1ApiErpURL = &#39;https://erp-integration-feature-one.remixshop.dev/api/&#39;
+86:       config.y2ApiErpURL = &#39;https://eapi.integration-feature-one.remixshop.dev/&#39;
+87:       config.y1ApiWHURL = &#39;https://integration-feature-one.remixshop.dev/warehouse/api/&#39;
+88:       config.inputGridURL = &#39;https://input-grid-backend.integration-feature-one.remixshop.dev/&#39;
+89:      }
+90:      if (env == &#39;integration-feature-two&#39;) {
+91:       config.baseURL = &#39;https://integration-feature-two.remixshop.dev/&#39;
+92:       config.y1ApiURL = &#39;https://integration-feature-two.remixshop.dev/api/&#39;
+93:       config.y2ApiURL = &#39;https://api.integration-feature-two.remixshop.dev/&#39;
+94:       config.ordersURL = &#39;https://orders.integration-feature-two.remixshop.dev/&#39;
+95:       config.idURL = &#39;https://my.integration-feature-two.remixshop.dev/&#39;
+96:       config.mfpURL = &#39;https://sell.integration-feature-two.remixshop.dev/&#39;
+97:       config.consApiURL = &#39;https://cons.integration-feature-two.remixshop.dev:443&#39;
+98:       config.consURL = &#39;https://cleanout.integration-feature-two.remixshop.dev/&#39;
+99:       config.whURL = &#39;https://warehouse.integration-feature-two.remixshop.dev/&#39;
+100:       config.kqURL = &#39;https://192.168.20.166:4691/&#39;
+101:       config.kqConsURL = &#39;https://192.168.20.166:4692/&#39;
+102:       config.kqErpURL = &#39;https://192.168.20.166:4693/&#39;
+103:       config.LadminURL = &#39;https://integration-feature-two.remixshop.dev/admin/&#39;
+104:       config.y1ApiErpURL = &#39;https://erp-integration-feature-two.remixshop.dev/api/&#39;
+105:       config.y2ApiErpURL = &#39;https://eapi.integration-feature-two.remixshop.dev/&#39;
+106:       config.y1ApiWHURL = &#39;https://integration-feature-two.remixshop.dev/warehouse/api/&#39;
+107:       config.inputGridURL = &#39;https://input-grid-backend.integration-feature-two.remixshop.dev/&#39;
+108:      }
+109:      if (env == &#39;hotfix&#39;) {
+110:       config.baseURL = &#39;https://integration-hotfix.remixshop.dev/&#39;
+111:       config.y1ApiURL = &#39;https://integration-hotfix.remixshop.dev/api/&#39;
+112:       config.y2ApiURL = &#39;https://api.integration-hotfix.remixshop.dev/&#39;
+113:       config.ordersURL = &#39;https://orders.integration-hotfix.remixshop.dev/&#39;
+114:       config.idURL = &#39;https://my.integration-hotfix.remixshop.dev/&#39;
+115:       config.mfpURL = &#39;https://sell.integration-hotfix.remixshop.dev/&#39;
+116:       config.consApiURL = &#39;https://cons.integration-hotfix.remixshop.dev:443&#39;
+117:       config.consURL = &#39;https://cleanout.integration-hotfix.remixshop.dev/&#39;
+118:       config.whURL = &#39;https://warehouse.integration-hotfix.remixshop.dev/&#39;
+119:       config.kqURL = &#39;https://192.168.90.8:X/&#39;
+120:       config.kqConsURL = &#39;https://192.168.90.8:X/&#39;
+121:       config.kqErpURL = &#39;https://192.168.90.8:X/&#39;
+122:       config.LadminURL = &#39;https://integration-hotfix.remixshop.dev/admin/&#39;
+123:       config.y1ApiErpURL = &#39;https://erp-integration-hotfix.remixshop.dev/api/&#39;
+124:       config.y2ApiErpURL = &#39;https://eapi.integration-hotfix.remixshop.dev/&#39;
+125:       config.y1ApiWHURL = &#39;https://integration-hotfix.remixshop.dev/warehouse/api/&#39;
+126:       config.kqConslURL = &#39;https://192.168.20.166:4667/&#39;
+127:       config.kqNewlURL = &#39;https://192.168.20.166:4666/&#39;
+128:       config.kqRedShift = &#39;https://192.168.20.166:4669/&#39;
+129:       config.inputGridURL = &#39;https://input-grid-backend.integration-hotfix.remixshop.dev/&#39;
+130:      }
+131:      if (env == &#39;live&#39;) {
+132:       config.baseURL = &#39;https://remixshop.com/&#39;
+133:       config.y2ApiURL = &#39;https://api.remixshop.com/&#39;
+134:       config.y1ApiURL = &#39;https://remixshop.com/&#39;
+135:       config.ordersURL = &#39;https://admin.remixshop.dev/&#39;
+136:       config.mfpURL = &#39;https://sell.remixshop.com/&#39;
+137:       config.consURL = &#39;https://cleanout.remixshop.com/&#39;
+138:       config.raas = &#39;https://tommy.remixwidget.com/&#39;
+139:       config.raasAdmin = &#39;https://raas-admin.remixshop.dev/#/&#39;
+140:      }
+141:      //Cronicle
+142:      if (env == &#39;devcronicle&#39;) {
+143:       config.baseURL = &#39;http://cronicle.rx.remixshop.com/&#39;
+144:      }
+145:      
+146:     // don&#39;t waste time waiting for a connection or if servers don&#39;t respond within 15 seconds
+147:     karate.configure(&#39;retry&#39;, { count: 6, interval: 3000 });
+148:     karate.configure(&#39;connectTimeout&#39;, 25000);
+149:     karate.configure(&#39;readTimeout&#39;, 20000);
+150: 
+151:     //OPTION 1: by default locally Chrome:
+152:     karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, addOptions: [&quot;--remote-allow-origins=*&quot;, &#39;--disable-search-engine-choice-screen&#39;, &#39;--disable-infobars&#39;,&#39;--no-first-run&#39;,&#39;--disable-notifications&#39;, &#39;--disable-features=PasswordLeakDetection&#39;], showDriverLog: false });
+153:     //OPTION 1 PLUS headerProxy!!!
+154:     //karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, addOptions: [&quot;--remote-allow-origins=*&quot;, &quot;--load-extension=&quot; + extensionPath], showDriverLog: false, });
+155:     //OPTION 2: docker container with Chromium, on M mac (arm) runs
+156:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;justinribeiro/chrome-headless:chromium&#39;, showDriverLog: true  });
+157:     //OPTION 3: docker container for Linux/Windows
+158:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;justinribeiro/chrome-headless:stable&#39;, showDriverLog: false });
+159:     //OPTION 4: Karate supported full featured container, with script video recording
+160:     //karate.configure(&#39;driverTarget&#39;, { docker: &#39;karatelabs/karate-chrome&#39;, showDriverLog: true })
+161:     //OPTION 5: mozilla
+162:     //karate.configure(&#39;driver&#39;, { type: &#39;geckodriver&#39;, executable: &#39;geckodriver.exe&#39; });
+163:     //OPTION 6: Chrome for testing:
+164:     //karate.configure(&#39;driver&#39;, { type: &#39;chrome&#39;, executable: chromeExecutable, addOptions: [ &quot;--remote-allow-origins=*&quot;, &quot;--disable-popup-blocking&quot;, &quot;--disable-infobars&quot;, &quot;--no-first-run&quot;, &quot;--no-default-browser-check&quot;, &quot;--start-maximized&quot;, &quot;--disable-features=DefaultBrowserSettingEnabled&quot;, &quot;--disable-component-update&quot;, &quot;--disable-background-networking&quot;, &quot;--safebrowsing-disable-auto-update&quot;, &quot;--disable-sync&quot;, &quot;--disable-background-extensions&quot;, &quot;--disable-background-timer-throttling&quot;, &quot;--disable-client-side-phishing-detection&quot;, &quot;--disable-web-security&quot;, &quot;--test-type&quot;, &quot;--disable-gpu&quot;, &quot;--allow-running-insecure-content&quot;, &quot;--ignore-certificate-errors&quot;, &quot;--disable-translate&quot;, &quot;--disable-dev-shm-usage&quot;, &quot;--disable-default-apps&quot;, &quot;--disable-notifications&quot;, &quot;--disable-logging&quot;, &quot;--no-default-browser-check&quot;, &quot;--disable-blink-features=AutomationControlled&quot;, &quot;--remote-debugging-port=9222&quot; ], webDriverSession: { capabilities: { &#39;goog:chromeOptions&#39;: { prefs: { &#39;search_provider&#39;: { &#39;name&#39;: &#39;Google&#39;, &#39;keyword&#39;: &#39;google.com&#39;, &#39;search_url&#39;: &#39;https://www.google.com/search?q={searchTerms}&#39;, &#39;favicon_url&#39;: &#39;https://www.google.com/favicon.ico&#39; }, &#39;intl.accept_languages&#39;: &#39;en-US&#39;, &#39;profile&#39;: { &#39;password_manager_enabled&#39;: false }, &#39;credentials_enable_service&#39;: false }, &#39;useAutomationExtension&#39;: false, &#39;excludeSwitches&#39;: [&#39;enable-automation&#39;] } } }, showDriverLog: true });
+165:     //Configure the global afterScenario (where ping to Slack is performed on test failure)
+166:     karate.configure(&#39;afterScenario&#39;, read(&#39;classpath:afterSlack.js&#39;));
+167: 
+168:     var android = {};
+169:     android[&quot;desiredConfig&quot;] = {
+170:       alwaysMatch: {
+171:         &quot;appium:app&quot;: &quot;/Users/lyubomirlyubenov/Downloads/app-release.apk&quot;,
+172:         &quot;appium:newCommandTimeout&quot;: 300,
+173:         &quot;appium:platformVersion&quot;: &quot;14.0&quot;,
+174:         &quot;appium:platformName&quot;: &quot;Android&quot;,
+175:         &quot;appium:connectHardwareKeyboard&quot;: true,
+176:         &quot;appium:deviceName&quot;: &quot;emulator-5554&quot;,
+177:         &quot;appium:avd&quot;: &quot;Pixel_6a_API_34&quot;,
+178:         &quot;appium:automationName&quot;: &quot;UiAutomator2&quot;
+179:       },
+180:       firstMatch: [{}]
+181:     };
+182:     config[&quot;android&quot;] = android;
+183:     return config;
+184:   }    
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: afterSlack.js
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- &lt;js&gt;.fn(Unnamed:166)
+
+apptest/android.feature:4
+apptest/android.feature:7
+apptest/android.feature:8
+apptest/android.feature:9
+apptest/android.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
